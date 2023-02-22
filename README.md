@@ -51,10 +51,10 @@ go mod : Yang digunakan untuk manajemen package / dependency berupa library
 Tools :
 Tools yang dapat kalian gunakan : 
 
-<li>Gin Gonic Framework : https://github.com/gin-gonic/gin </li>
-Gorm : https://gorm.io/index.html 
-JWT Go : https://github.com/dgrijalva/jwt-go 
-Go Validator : http://github.com/asaskevich/govalidator 
+<ol>Gin Gonic Framework : https://github.com/gin-gonic/gin </ol>
+<ol>Gorm : https://gorm.io/index.html </ol>
+<ol>JWT Go : https://github.com/dgrijalva/jwt-go </ol>
+<ol>Go Validator : http://github.com/asaskevich/govalidator </ol>
 
 
 Untuk database, gunakanlah server SQL open source seperti MySQL, PostgreSQL, atau Microsoft SQL Server.
