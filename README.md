@@ -51,7 +51,7 @@ go mod : Yang digunakan untuk manajemen package / dependency berupa library
 Tools :
 Tools yang dapat kalian gunakan : 
 
-Gin Gonic Framework : https://github.com/gin-gonic/gin 
+<li>Gin Gonic Framework : https://github.com/gin-gonic/gin </li>
 Gorm : https://gorm.io/index.html 
 JWT Go : https://github.com/dgrijalva/jwt-go 
 Go Validator : http://github.com/asaskevich/govalidator 
