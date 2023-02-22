@@ -4,30 +4,30 @@
 Ketentuan API :
 Pada bagian User Endpoint :
 
-POST : /users/register, dan gunakan atribut berikut ini
-ID (primary key, required)
-Username (required)
-Email (unique & required) 
-Password (required & minlength 6)
-Relasi dengan model Photo (Gunakan constraint cascade)
-Created At (timestamp)
-Updated At (timestamp)
-GET: /users/login
-Using email & password (required)
-PUT : /users/:userId (Update User)
-DELETE : /users/:userId (Delete User)
-Photos Endpoint
+<ol><li>POST : /users/register, dan gunakan atribut berikut ini</li>
+<li>ID (primary key, required)</li>
+<li>Username (required)</li>
+<li>Email (unique & required) </li>
+<li>Password (required & minlength 6)</li>
+<li>Relasi dengan model Photo (Gunakan constraint cascade)</li>
+<li>Created At (timestamp)</li>
+<li>Updated At (timestamp)</li>
+<li>GET: /users/login</li>
+<li>Using email & password (required)</li>
+<li>PUT : /users/:userId (Update User)</li>
+<li>DELETE : /users/:userId (Delete User)</li>
+<li>Photos Endpoint</li></ol>
 
 POST : /photos 
-ID
-Title
-Caption
-PhotoUrl
-UserID
-Relasi dengan model User
-GET : /photos
-PUT : /photoId
-DELETE : /:photoId
+<ol><li>ID</li>
+<li>Title</li>
+<li>Caption</li>
+<li>PhotoUrl</li>
+<li>UserID</li>
+<li>Relasi dengan model User</li>
+<li>GET : /photos</li>
+<li>PUT : /photoId</li>
+<li>DELETE : /:photoId</li></ol>
 
 
 Requirement :
@@ -38,14 +38,14 @@ Pastikan hanya user yang membuat foto yang dapat menghapus / mengubah foto
 Environment
 Struktur dokumen / environment dari GoLang yang akan dibentuk kurang lebih sebagai berikut :
 
-app :Menampung pembuatan struct dalam kasus ini menggunakan struct user untuk keperluan data dan authentication
-controllers : Berisi antara logic database yaitu models dan query
-database: Berisi konfigurasi database serta digunakan untuk menjalankan koneksi database dan migration
-helpers : Berisi fungsi-fungsi yang dapat digunakan di setiap tempat dalam hal ini jwt, bcrypt, headerValue
-middlewares :Berisi fungsi yang digunakan untuk proses otentikasi jwt yang digunakan untuk proteksi api
-models : Berisi models yang digunakan untuk relasi database 
-router : Berisi konfigurasi routing / endpoint yang akan digunakan untuk mengakses api
-go mod : Yang digunakan untuk manajemen package / dependency berupa library
+<ol><li>app :Menampung pembuatan struct dalam kasus ini menggunakan struct user untuk keperluan data dan authentication</li>
+<li>controllers : Berisi antara logic database yaitu models dan query</li>
+<li>database: Berisi konfigurasi database serta digunakan untuk menjalankan koneksi database dan migration</li>
+<li>helpers : Berisi fungsi-fungsi yang dapat digunakan di setiap tempat dalam hal ini jwt, bcrypt, headerValue</li>
+<li>middlewares :Berisi fungsi yang digunakan untuk proses otentikasi jwt yang digunakan untuk proteksi api</li>
+<li>models : Berisi models yang digunakan untuk relasi database </li>
+<li>router : Berisi konfigurasi routing / endpoint yang akan digunakan untuk mengakses api</li>
+<li>go mod : Yang digunakan untuk manajemen package / dependency berupa library</li></ol>
 
 
 Tools :
